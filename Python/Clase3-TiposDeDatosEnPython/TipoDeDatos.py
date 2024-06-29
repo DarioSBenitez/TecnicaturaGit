@@ -1,27 +1,4 @@
-# Las variables en Python son dinamicas, esto quiere decir que el valor puede cambiar segun le asigno un nuevo valor.
-
-miVariable = 3 # miVariable toma el valor 3
-print(miVariable)
-miVariable = "Hola a todos los estudiantes de la tecnicatura" # ahora miVariable toma un string
-print(miVariable)
-miVariable = 3.5 # ahora miVariable toma un valor real, (Flotante!)
-print(miVariable)
-
-x = 10
-y = 2
-z = x + y
-
-print(id(x))
-print(id(y))
-print(id(z))
-
-# La variable x apunta a la direccion de memoria x648 donde esta guardado el valor 10
-# con id mostramos la direccion de memoria a la que apunta la variable x
-
-# Los literales se escriben x648, la variable y = x272, la variable z = x592. Estos valores cambian cada vez que se ejecuta el programa
-# porque la memoria es volatil y cada vez que se vuelve a ejecutar el programa, las variables apuntan a direcciones diferentes de memoria
-# por lo que van a tener direcciones diferentes.
-
+# Tipos de datos en Python
 #Para mostrar el tipo de dato de una variable..
 
 a = "Hola como estas"
@@ -72,6 +49,24 @@ else:
     print(entrada3)
     
     entrada4 = bool(input("ingresa True o False"))
-    print(entrada4)    
-    
-    
+    print(entrada4)
+
+
+# FUNCION INPUT (ENTRADA DEL USUARIO, Como entra los datos el usuario)
+
+resultado = input("Digite un número") # Regresa un dato tipo string
+print(resultado)
+
+# Conversion de la entrada de datos
+
+numero1 = input("Escribe el primer número")
+numero2 = input("Escribe el segundo número")
+resultado2 = numero1 + numero2
+print(resultado2)
+
+
+# el input guarda el dato como cadena. Si quiero especificar debo hacer (tipo(input))
+numero1 = int(input("Ingresa un número desde el 10 en adelante"))
+numero2 = int(input("Ingresa un número desde el 30 en adelante"))
+resta5 = numero2 - numero1
+print(resta5)
