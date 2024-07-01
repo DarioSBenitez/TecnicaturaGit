@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Backend Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <div class="about-content">
+            <div class="text-content">
+                <p><strong>¡Hola! Soy Dario Benitez.</strong><br>
+                Desarrollador Backend con Python y JavaScript<br><br>
+                SMe especializo en crear aplicaciones robustas y escalables. Mis lenguajes principales son Python y JavaScript y disfruto utilizando frameworks y tecnologías que potencian la eficiencia y la calidad del software.
+                </p>
+                <h3>Lenguajes y Frameworks:</h3>
+                <ul>
+                    <li>Python: Django, Flask</li>
+                    <li>JavaScript: Node.js, Express.js</li>
+                    <li>Bases de Datos: SQLAlchemy, MongoDB</li>
+                    <li>APIs: REST, GraphQL</li>
+                </ul>
+                <h3>Herramientas:</h3>
+                <ul>
+                    <li>Docker: Para entornos consistentes y despliegues escalables.</li>
+                    <li>Git: Control de versiones para un desarrollo eficiente.</li>
+                    <li>CI/CD: Pipelines automatizados para asegurar calidad y estabilidad.</li>
+                </ul>
+                <h3>Filosofía de Trabajo:</h3>
+                <ul>
+                    <li>Código limpio y mantenible siguiendo principios SOLID.</li>
+                    <li>TDD (Desarrollo Guiado por Pruebas) para asegurar calidad.</li>
+                    <li>Comunicación clara y efectiva en equipos colaborativos.</li>
+                </ul>
+                <h3>Proyectos Destacados:</h3>
+                <ol>
+                    <li>Sistema de Gestión de Inventarios: Con Django para seguimiento y generación de informes.</li>
+                    <li>API de E-commerce: Con Node.js y Express, facilitando la gestión de productos y órdenes.</li>
+                    <li>Aplicación de Blog: Con Flask y SQLAlchemy, enfocada en usabilidad y rendimiento.</li>
+                </ol>
+                <h3>Más Allá del Código:</h3>
+                <ul>
+                    <li>Participación en comunidades de desarrolladores.</li>
+                    <li>Mentoría a nuevos desarrolladores.</li>
+                </ul>
+            </div>
+            <img src="/Images/yo.png" alt="Mi foto">
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-container">
+            <button class="project">
+                <a href="/rapido.html">
+                    <h2 class="letras">Rápidos</h2>
+                </a>
+            </button>
+            <button class="project">
+                <a href="/responsivo.html">
+                    <h2 class="letras">Responsivos</h2>
+                </a>
+            </button>
+            <button class="project">
+                <a href="/intuitivo.html">
+                    <h2 class="letras">Intuitivos</h2>
+                </a>
+            </button>
+            <button class="project">
+                <a href="/dinamico.html">
+                    <h2 class="letras">Dinámicos</h2>
+                </a>
+            </button>
+            <!-- Añade más proyectos según sea necesario -->
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>
